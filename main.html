@@ -9,24 +9,42 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<form method="post" action="/submit">
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Name" required><br><br>
-		<label for="phone">Phone Number</label>
-		<input type="text" id="phone" placeholder="Phone Number" required><br><br>
-		<label for="address">Address</label>
-		<input type="text" id="address" placeholder="Address" required><br><br>
-		Have you ever lived with a Dog before?
-		<input type="checkbox"id="checkbox" value="Have you ever lived with a Dog before?" name="option1">
-		<label for="checkbox">Yes</label><br><br>
+		<!--<label for="name">Name</label> -->
+		<caption class="caption"><h3>Dog Adoption Application</h3></caption>
+
+	
+		<input id="name" name="name" type="text" placeholder="Name" />
+		<br/>
+		<br/>
+
+<!-- 		<label for="Phone Number">Phone Number</label> -->
+		<input id="phone" name="Phone Number" type="text" placeholder="Phone Number" />
 		
-		<label for="multiSelect">Please select your preferred breeds</label>
-		<select id="multiSelect" name="breed">
-			<option value="default" selected hidden disabled>Select the breed</option>
-			<option value="Labrador">Labrador</option>
-			<option value="Husky">Husky</option>
-			<option value="Beagel">Beagel</option>
-		</select><br><br>
-		<button type="submit" value="Submit">submit</button>
+		<br/>
+		<br/>
+		
+<!-- 		<label for="address">Address</label> -->
+		<input id="address" name="address" type="text" placeholder="Address" />
+		<br/>
+		<br/>
+		
+		<label for="checkbox">Have you ever lived with a Dog before?</label>
+		<input id="checkbox" name="checkbox" type="checkbox" value="Have you ever lived with a Dog before?" />
+		<br/>
+		<br/>
+		<label for="dog">Please select your preferred breeds</label>
+
+		<select name="dog" id="multiSelect">
+		  <option value="German Shephered">German Shephered</option>
+		  <option value="Basset Retriever">Basset Retriever</option>
+		  <option value="Beagle">Beagle</option>
+		
+		</select>
+
+		<br/>
+		<br/>
+
+		<input id="submit" type="submit" value="Submit" class="button" />
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
